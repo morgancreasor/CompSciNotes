@@ -1,0 +1,55 @@
+Git Can:
+
+get help!
+	git help //insert what you want help with, or nothing! for all help//
+
+Add repositories
+	cd //go to the directory//
+	git add . //dot adds all in the file// 
+		OR git commit -a
+	git commit -m "//add in comment here for the commit//"
+
+See changes in repositories
+	git status
+
+see differences by comparison
+	git diff
+
+Has 3 dif stages
+	1. working files
+	2. staging
+		git add .
+	3. commit
+		git commit -a -m //-a bypasses the add, and -m adds a comment//
+
+
+can remove files
+	git rm "//file name here//"
+
+can restore files
+	git restore "//file name here//"
+
+
+can change file names
+	git mv "//original file name here//" "//new file name here//"
+	git commit -m "//add comment here//"
+
+see all commits made
+	git log //abreviated//
+	OR
+	git log -p //more detail//
+	
+
+create branches to make safe changes
+	git branch //branch name// (we will call it FixTemp) //this makes new branch//
+	git branch //this shows what branch we are in with an asterix//
+	git switch FixTemp //now we are working in this branch//
+	//now, when you make changes while in FixTemp, file explorerer will only only show FixTemp until you switch back to the main branch in Git//
+
+Merge branches
+	git switch main //switch back to branch you want to merge into//
+	git merge -m "Merge fixtemp back to main //this is the message//" FixtTemp 
+
+delete branch
+	git brach -d //branch name you wish to delete//
+
